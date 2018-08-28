@@ -1,0 +1,63 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Screen1" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-divider item">
+            Report
+        </div>
+        <div class="item-text-wrap item">
+            Take a picture, set location, choose type and get it fixed
+        </div>
+    </div>
+    <img ng-src="{{img}}" width="" height="" src="files/images/Pothole400.jpg" class="img-default img-responsive"
+    alt="Image error">
+    <button class="button button-calm button-block icon-right ion-camera" ng-click="launchCam()">
+        Camera
+    </button>
+    <button class="button button-calm button-block icon-right ion-android-locate" ng-click="showLocation()">
+        Set Location
+    </button>
+    <div class="item item-input">
+        <i class="icon ion-map calm placeholder-icon">
+        </i>
+        <span class="input-label">
+            Latitude
+        </span>
+        <input type="number" placeholder="" value="{{lat}}" ng-model="lng">
+    </div>
+    <div class="item item-input">
+        <i class="icon ion-map calm placeholder-icon">
+        </i>
+        <span class="input-label">
+            Longitude
+        </span>
+        <input type="number" placeholder="" value="{{lng}}" ng-model="lng">
+    </div>
+    <div class="item item-input item-select ">
+        <div class="input-label">
+            Type
+        </div>
+        <select>
+            <option>
+                Road
+            </option>
+            <option>
+                Metro
+            </option>
+            <option>
+                Airport
+            </option>
+            <option>
+                Waterway
+            </option>
+        </select>
+    </div>
+    <label class="item item-input item-stacked-label">
+        <span class="input-label">
+            Describe your concern
+        </span>
+        <textarea placeholder=""></textarea>
+    </label>
+    <button class="button button-assertive button-block icon-left ion-android-send">
+        Send Report
+    </button>
+</div>

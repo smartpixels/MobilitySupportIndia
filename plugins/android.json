@@ -1,0 +1,54 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "io.appery.project561851"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            index
+        </title>
+        <script src="libs/angular/angular.min.js">
+        </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"
+        />
+        <link href="css/ionic/ionic.min.css" rel="stylesheet" />
+        <link href="css/appery-ui/appery-ui.css" rel="stylesheet" />
+        <link href="css/__aio_components.css" rel="stylesheet" />
+        <script>
+                var require = {
+            urlArgs: window.navigator.userAgent.match(/Windows Phone/i) ? undefined : "bust=1535452945"
+        };
+        </script>
+        <script data-main="app/bootstrap" src="libs/requirejs/require.js">
+        </script>
+    </head>
+    
+    <body>
+        <div ng-controller="indexController" ng-cloak ng-init="init()">
+            <ion-header-bar data-aio-id="header" class="bar bar-calm" ng-show="visionStatus.header">
+                <div class="buttons">
+                    <button class="button button-icon button-inline icon ion-home" ng-click="navHome()">
+                    </button>
+                </div>
+                <h1 class="title">
+                    Mobility Support
+                </h1>
+                <div class="buttons pull-right">
+                    <button class="button button-calm button-icon button-inline button-large icon ion-ios-bell-outline"
+                    ng-click="navNotify()">
+                    </button>
+                    <button class="button button-calm button-icon button-inline icon ion-archive" ng-click="navArchive()">
+                    </button>
+                </div>
+            </ion-header-bar>
+            <div ng-view data-aio-id="ng-view" hasHeader hasFooter class="">
+            </div>
+            <ion-footer-bar data-aio-id="footer" class="bar bar-calm bar-footer" ng-show="visionStatus.footer">
+                <div class="buttons">
+                </div>
+                <h1 class="title">
+                    © Smartpixels
+                </h1>
+                <div class="buttons">
+                </div>
+            </ion-footer-bar>
+        </div>
+    </body>
+
+</html>
